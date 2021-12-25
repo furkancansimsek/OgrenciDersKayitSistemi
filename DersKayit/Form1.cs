@@ -77,29 +77,29 @@ namespace DersKayit
         void zorunluYazdir()
         {
             string[] item;
-            item = new string[checkedListBox1.Items.Count];//eleman dizisinin boyutunu belirleyelim.
-            TextWriter writer = new StreamWriter("..\\..\\zorunludersler.txt");//TextWriter sınıfından yeni bir yazici adlı nesne üretelim ve klasor yolunu streamWriter içine yazalım.
+            item = new string[checkedListBox1.Items.Count];
+            TextWriter writer = new StreamWriter("..\\..\\zorunludersler.txt");
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
-                item[i] = checkedListBox1.Items[i].ToString();//diziye listboxtaki elemanları tek tek atalım.
-                writer.WriteLine(item[i]);//txt dosyasına yazdırıp sırayla bir satır aşağı indirelim
+                item[i] = checkedListBox1.Items[i].ToString();
+                writer.WriteLine(item[i]);
             }
-            writer.Flush();//txt metnine tüm verileri gömelim.
-            writer.Close();// son olarak nesnemizi kapatalım.
+            writer.Flush();
+            writer.Close();
         }
 
         void secmeliYazdir()
         {
             string[] item;
-            item = new string[checkedListBox2.Items.Count];//eleman dizisinin boyutunu belirleyelim.
-            TextWriter writer = new StreamWriter("..\\..\\secmelidersler.txt");//TextWriter sınıfından yeni bir yazici adlı nesne üretelim ve klasor yolunu streamWriter içine yazalım.
+            item = new string[checkedListBox2.Items.Count];
+            TextWriter writer = new StreamWriter("..\\..\\secmelidersler.txt");
             for (int i = 0; i < checkedListBox2.Items.Count; i++)
             {
-                item[i] = checkedListBox2.Items[i].ToString();//diziye listboxtaki elemanları tek tek atalım.
-                writer.WriteLine(item[i]);//txt dosyasına yazdırıp sırayla bir satır aşağı indirelim
+                item[i] = checkedListBox2.Items[i].ToString();
+                writer.WriteLine(item[i]);
             }
-            writer.Flush();//txt metnine tüm verileri gömelim.
-            writer.Close();// son olarak nesnemizi kapatalım.
+            writer.Flush();
+            writer.Close();
         }
         void tBoxKontrol(int tur, TextBox input)
         {
@@ -240,10 +240,10 @@ namespace DersKayit
                     oku.Close();
 
 
-                    TextWriter writer = new StreamWriter("..\\..\\ogrenciler.txt");//TextWriter sınıfından yeni bir yazici adlı nesne üretelim ve klasor yolunu streamWriter içine yazalım.
+                    TextWriter writer = new StreamWriter("..\\..\\ogrenciler.txt");
                     writer.WriteLine(okunan + ogrenciEkle.ogrenciBirlestir());
-                    writer.Flush();//txt metnine tüm verileri gömelim.
-                    writer.Close();// son olarak nesnemizi kapatalım.
+                    writer.Flush();
+                    writer.Close();
                     clearAll();
                     MessageBox.Show("Öğrenci Kaydedildi.");
                 }
@@ -267,31 +267,31 @@ namespace DersKayit
                 if (radioButton9.Checked)
                 {
                     string[] item;
-                    item = new string[checkedListBox1.Items.Count];//eleman dizisinin boyutunu belirleyelim.
-                    TextWriter writer = new StreamWriter("..\\..\\zorunludersler.txt");//TextWriter sınıfından yeni bir yazici adlı nesne üretelim ve klasor yolunu streamWriter içine yazalım.
+                    item = new string[checkedListBox1.Items.Count];
+                    TextWriter writer = new StreamWriter("..\\..\\zorunludersler.txt");
                     for (int i = 0; i < checkedListBox1.Items.Count; i++)
                     {
-                        item[i] = checkedListBox1.Items[i].ToString();//diziye listboxtaki elemanları tek tek atalım.
-                        writer.WriteLine(item[i]);//txt dosyasına yazdırıp sırayla bir satır aşağı indirelim
+                        item[i] = checkedListBox1.Items[i].ToString();
+                        writer.WriteLine(item[i]);
                     }
                     writer.WriteLine(ekle.dersAdiBirlestir());
-                    writer.Flush();//txt metnine tüm verileri gömelim.
-                    writer.Close();// son olarak nesnemizi kapatalım.
+                    writer.Flush();
+                    writer.Close();
                     checkedListBox1.Items.Add(ekle.dersAdiBirlestir());
                 }
                 else
                 {
                     string[] item;
-                    item = new string[checkedListBox2.Items.Count];//eleman dizisinin boyutunu belirleyelim.
-                    TextWriter writer = new StreamWriter("..\\..\\secmelidersler.txt");//TextWriter sınıfından yeni bir yazici adlı nesne üretelim ve klasor yolunu streamWriter içine yazalım.
+                    item = new string[checkedListBox2.Items.Count];
+                    TextWriter writer = new StreamWriter("..\\..\\secmelidersler.txt");
                     for (int i = 0; i < checkedListBox2.Items.Count; i++)
                     {
-                        item[i] = checkedListBox2.Items[i].ToString();//diziye listboxtaki elemanları tek tek atalım.
-                        writer.WriteLine(item[i]);//txt dosyasına yazdırıp sırayla bir satır aşağı indirelim
+                        item[i] = checkedListBox2.Items[i].ToString();
+                        writer.WriteLine(item[i]);
                     }
                     writer.WriteLine(ekle.dersAdiBirlestir());
-                    writer.Flush();//txt metnine tüm verileri gömelim.
-                    writer.Close();// son olarak nesnemizi kapatalım.
+                    writer.Flush();
+                    writer.Close();
                     checkedListBox2.Items.Add(ekle.dersAdiBirlestir());
                 }
 
