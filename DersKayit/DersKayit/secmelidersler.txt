@@ -1,0 +1,6 @@
+4215 ∽ .NET Uygulama Geliştirme 1 ∽ AKTS 3
+4000 ∽ Meslek Etiği 1 ∽ AKTS 2
+4001 ∽ İşletme Yönetimine Giriş 1 ∽ AKTS 3
+4215 ∽ .NET Uygulama Geliştirme 2 ∽ AKTS 3
+4001 ∽ İşletme Yönetimine Giriş 2 ∽ AKTS 3
+4000 ∽ Meslek Etiği 2 ∽ AKTS 2
